@@ -39,3 +39,13 @@ These cohort ranges appear only in Teaching, at the author’s request. They are
 - The [KG-QAGen v1 arXiv record](https://arxiv.org/abs/2505.12495v1) gives May 18, 2025 as the submission date. The original news wording is retained at the author’s request.
 - All 12 old news items from 2022–2025 and the dated Sai University teaching terms are carried forward from the existing website. They have not been independently reverified. The tutoring description comes from the CV. The standalone Education section is omitted at the author’s request. Calculus tutoring is omitted at the author’s request.
 
+## Additional milestones supplied by the author
+
+The author supplied the following exact dates and wording directly on October 1, 2026. They are personal milestone dates, not inferred from the linked pages.
+
+- September 19, 2026: Gold Medal for ranking first in the School of Computing and Data Science at Sai University. [Ceremony video at the supplied timestamp](https://www.youtube.com/live/f80t5SH_Cfg?si=BLhoirrjiIdQLsMD&t=5854).
+- October 28, 2025: Started as a Data Science Intern at The Gen Academy. This news item was explicitly requested after the earlier request to keep the Gen Academy teaching cohorts out of News.
+- May 28, 2025: Started as a Research Intern at NetoAI.
+- May 21, 2025: Invited to join the [Young South Asian Leaders Initiative](https://www.state.gov/young-south-asian-leaders-initiative) by the U.S. Department of State and the U.S. Mission in India.
+- June 19, 2024: Started as a Software Development Intern at NetoAI.
+- August 24, 2022: Started as a Software Engineer Intern on the DevOps team at Prodapt.
