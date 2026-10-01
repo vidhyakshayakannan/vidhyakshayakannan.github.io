@@ -1,6 +1,6 @@
 # Content and date sources
 
-Verified October 1, 2026. The biography and education use Vidhyakshaya Kannan's latest available CV (PDF exported September 15, 2026) and her direct updates. The downloadable CV is that PDF, unchanged.
+Verified October 1, 2026. The biography and education use Vidhyakshaya Kannan's latest available CV (PDF exported September 15, 2026) and her direct updates. The downloadable CV is that PDF, unchanged. At the author’s request, the original introduction is preserved except for the opening sentence identifying her as a Stanford Symbolic Systems master’s student.
 
 ## Stanford
 
