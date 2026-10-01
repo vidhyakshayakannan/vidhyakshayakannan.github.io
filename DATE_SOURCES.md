@@ -6,7 +6,7 @@ Verified October 1, 2026. The website content uses Vidhyakshaya Kannan's latest 
 
 - **Admission: April 16, 2026.** Date provided directly by Vidhyakshaya; year agrees with the CV's September 2026 program start.
 - **Starting quarter: Autumn 2026.** The [Stanford academic calendar](https://studentservices.stanford.edu/calendar-events/academic-calendars/stanford-academic-calendar-2026-2027) identifies September 22, 2026 as the first day of the quarter and instruction. The news entry describes the quarter start, not an arrival or orientation date. June 2028 is the CV's expected completion month.
-- **CS224V: Agentic AI, Teaching Assistant, Autumn 2026.** The [official course page](https://web.stanford.edu/class/cs224v/index.html) lists Vidhyakshaya Kannan as a TA, Monica Lam as instructor, and the Stanford contact address. A specific employment start or end day is not asserted.
+- **CS224V: Agentic AI, Course Assistant, Autumn 2026.** The [official course page](https://web.stanford.edu/class/cs224v/index.html) lists Vidhyakshaya Kannan as a TA, Monica Lam as instructor, and the Stanford contact address. Vidhyakshaya explicitly supplied the Course Assistant title and October 1, 2026 teaching-team start date for the news entry.
 
 ## Conference acceptance timeline
 
@@ -21,7 +21,7 @@ The [KDD paper list](https://kdd2026.kdd.org/papers/) includes IPO-Mine in `cycl
 
 ## The Gen Academy / Maven cohorts
 
-Vidhyakshaya confirmed serving as a teaching assistant for the May and August cohorts. [Maven's public course page](https://maven.com/aishwarya-srinivasan/mastering-ai-agents) supplies the following archived cohort records in its rendered page data (`props.pageProps.cohortsWithSyllabus`). The course timezone is `America/Los_Angeles`.
+Vidhyakshaya confirmed serving as a teaching assistant for the May and August cohorts and supplied the instructor descriptions: Aishwarya Srinivasan (ex Google, Microsoft, IBM) and Arvind Narayanamurthy (ex Microsoft, Adobe, IBM). [Maven's public course page](https://maven.com/aishwarya-srinivasan/mastering-ai-agents) supplies the following archived cohort records in its rendered page data (`props.pageProps.cohortsWithSyllabus`). The course timezone is `America/Los_Angeles`.
 
 | Cohort | Published course range | Maven ID / slug | Source start / end values |
 | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ These cohort ranges appear only in Teaching, at the author’s request. They are
 
 ## Publications and older milestones
 
-- IPO-Mine: [arXiv record and author order](https://arxiv.org/abs/2605.28714), [ACM DOI](https://doi.org/10.1145/3770855.3817580), and CV. Author order follows the paper, not the KDD program's different display order.
+- IPO-Mine: [arXiv record and author order](https://arxiv.org/abs/2605.28714), [ACM DOI](https://doi.org/10.1145/3770855.3817580), and CV. Author order follows the paper, not the KDD program's different display order. Figure 1 was supplied directly by Vidhyakshaya and is used unchanged. Links are ordered paper (arXiv), ACM, and [code](https://github.com/gtfintechlab/IPO-Mine).
 - KG-MuLQA: [published ACL record](https://aclanthology.org/2026.acl-long.151/) and PDF supply the final title, author order, equal-contribution marks, 20,139 QA pairs, and 16-model evaluation. Oral status is recorded in the CV.
 - ConfReady: [ACL record](https://aclanthology.org/2025.emnlp-demos.49/).
 - T-VEC: [ACL record](https://aclanthology.org/2025.emnlp-industry.168/).
