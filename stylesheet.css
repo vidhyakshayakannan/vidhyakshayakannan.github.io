@@ -256,10 +256,6 @@ body { margin: 0; color: #222; line-height: 1.6; }
 .content-section h2 { margin-bottom: 14px; }
 .date-note, .date-source, .muted { color: #666; font-size: 12px; }
 .date-note { margin: 8px 0 0; }
-.education-list { margin: 0; }
-.education-list > div { margin-bottom: 14px; }
-.education-list dt { font-weight: 700; }
-.education-list dd { margin: 2px 0 0; }
 .publication { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; margin: 28px 0 36px; }
 .publication-visual { align-self: start; padding-top: 4px; }
 .publication-visual img { width: 100%; height: auto; border-radius: 4px; }
