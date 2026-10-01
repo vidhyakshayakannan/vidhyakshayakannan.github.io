@@ -1,306 +1,188 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="utf-8">
+  <title>Vidhyakshaya Kannan</title>
+  <meta name="author" content="Vidhyakshaya Kannan">
+  <meta name="description" content="Vidhyakshaya Kannan is a Symbolic Systems master’s student at Stanford University working on NLP, long-context language model evaluation, and agentic AI.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script>
+    function activateTab() {
+      const requested = window.location.hash.slice(1);
+      const tabName = ['home', 'research', 'teaching'].includes(requested) ? requested : 'home';
+      document.querySelectorAll('.tab-content').forEach(section => {
+        section.classList.toggle('active', section.id === tabName);
+      });
+      document.querySelectorAll('.nav-tabs a[href^="#"]').forEach(link => {
+        const active = link.hash === '#' + tabName;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
+      });
+    }
+    window.addEventListener('hashchange', activateTab);
+    window.addEventListener('DOMContentLoaded', activateTab);
+  </script>
+  <noscript><style>.tab-content { display: block; }</style></noscript>
+</head>
+<body>
+  <nav class="nav-tabs" aria-label="Main navigation">
+    <a href="#home" class="nav-link active" aria-current="page">Home</a>
+    <a href="#research" class="nav-link">Research</a>
+    <a href="#teaching" class="nav-link">Teaching</a>
+    <a href="https://vidhyakshayakannan.blogspot.com" class="nav-link" target="_blank" rel="noopener noreferrer">Personal Blog</a>
+  </nav>
+  <main class="site-content">
+    <section id="home" class="tab-content active" aria-label="Home">
+      <div class="profile">
+        <div>
+          <h1 class="name">Vidhyakshaya Kannan</h1>
+          <p>I am a master’s student in <a href="https://symsys.stanford.edu/graduates/masters-program">Symbolic Systems at Stanford University</a>, where I began in Autumn 2026. I am a teaching assistant for <a href="https://web.stanford.edu/class/cs224v/index.html">CS224V: Agentic AI</a>, taught by Professor Monica Lam.</p>
+          <p>I work on NLP and language model evaluation with the <a href="https://fintech.gatech.edu">Georgia Tech Financial Services Innovation Lab</a>, supervised by <a href="https://www.scheller.gatech.edu/directory/faculty/chava/index.html">Dr. Sudheer Chava</a>. I have also studied cognitive mechanisms of temporal attention with <a href="https://faculty-directory.dartmouth.edu/jamshed-j-bharucha">Dr. Jamshed Bharucha</a>.</p>
+          <p>I earned my B.Tech. in Computing and Data Science, with a minor in English Literature, at <a href="https://www.saiuniversity.edu.in">Sai University</a>. As a <a href="https://globalugrad.org/">Global UGRAD Scholar</a>, I spent Autumn 2024 at New England College on a fully funded exchange, as one of five scholars selected from India.</p>
+          <p>During my undergraduate studies, I was fortunate to be advised by <a href="https://www.saiuniversity.edu.in/saiu-faculties/ram-prasad-krishnamoorthy">Dr. Ram Prasad Krishnamoorthy</a> and <a href="https://acr.iitm.ac.in/latestdaas/dr-krithi-ramamritham/">Dr. Krithi Ramamritham</a>.</p>
+          <p class="profile-links"><a href="mailto:kannanv@stanford.edu">Email</a> / <a href="data/Vidhyakshaya_Kannan_CV__3_Page_.pdf">CV</a> / <a href="https://scholar.google.com/citations?user=mqSXTOUAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a> / <a href="https://github.com/vidhyakshayakannan">GitHub</a></p>
+        </div>
+        <a class="profile-photo" href="images/VidhyakshayaKannan.png"><img src="images/VidhyakshayaKannan.png" alt="Vidhyakshaya Kannan"></a>
+      </div>
+      <section class="content-section" aria-labelledby="news-heading">
+        <h2 id="news-heading">News</h2>
+        <div class="news-section" tabindex="0" role="region" aria-label="News timeline">
+          <ul>
+          <li><strong><time datetime="2026-09-22">September 22, 2026</time></strong> &ndash; My first <a href="https://studentservices.stanford.edu/calendar-events/academic-calendars/stanford-academic-calendar-2026-2027">Autumn quarter</a> as a Symbolic Systems master’s student at Stanford University begins! I am also a teaching assistant for <a href="https://web.stanford.edu/class/cs224v/index.html">CS224V: Agentic AI</a> this quarter.</li>
+          <li><strong><time datetime="2026-08-08">August 8, 2026</time></strong> &ndash; The August cohort of <a href="https://maven.com/aishwarya-srinivasan/mastering-ai-agents">Mastering Agentic AI: Certification by The Gen Academy</a> begins! I served as a teaching assistant for this cohort, which ran through September 13, 2026.</li>
+          <li><strong><time datetime="2026-05-30">May 30, 2026</time></strong> &ndash; The May cohort of <a href="https://maven.com/aishwarya-srinivasan/mastering-ai-agents">Mastering Agentic AI: Certification by The Gen Academy</a> begins! I served as a teaching assistant for this cohort, which ran through July 13, 2026.</li>
+          <li><strong><time datetime="2026-05-16">May 16, 2026</time></strong> &ndash; <a href="https://doi.org/10.1145/3770855.3817580"><em>IPO-Mine</em></a> accepted to KDD 2026, Datasets and Benchmarks Track! <a class="date-source" href="https://kdd2026.kdd.org/datasets-and-benchmarks-track-call-for-papers/">Cycle 2 notification date</a>.</li>
+          <li><strong><time datetime="2026-04-16">April 16, 2026</time></strong> &ndash; I was accepted to the <a href="https://symsys.stanford.edu/graduates/masters-program">Symbolic Systems master’s program at Stanford University</a>!</li>
+          <li><strong><time datetime="2026-04-04">April 4, 2026</time></strong> &ndash; <a href="https://aclanthology.org/2026.acl-long.151/"><em>KG-MuLQA</em></a> accepted to ACL 2026 (main conference, oral presentation)! <a class="date-source" href="https://2026.aclweb.org/calls/main_conference_papers/">Acceptance-notification date</a>.</li>
+          <li><strong><time datetime="2025-09-24">September 24, 2025</time></strong> &ndash; <a href="https://aclanthology.org/2025.emnlp-industry.168/"><em>T-VEC</em></a> accepted to EMNLP 2025 (Industry Track)! <a class="date-source" href="https://2025.emnlp.org/calls/industry_track/">Track notification date</a>.</li>
+          <li><strong><time datetime="2025-09-09">September 9, 2025</time></strong> &ndash; <a href="https://aclanthology.org/2025.emnlp-demos.49/"><em>ConfReady</em></a> accepted to EMNLP 2025 (System Demonstrations)! <a class="date-source" href="https://2025.emnlp.org/calls/demos/">Track notification date</a>.</li>
+          <li><strong><time datetime="2025-05-18">May 18, 2025</time></strong> &ndash; We submitted the first version of <a href="https://arxiv.org/abs/2505.12495v1"><em>KG-QAGen</em></a> to arXiv, later published as <em>KG-MuLQA</em>.</li>
+          <li><strong><time datetime="2024-08-23">August 23, 2024</time></strong> &ndash; I started my exchange semester as a Global UGRAD Scholar at <a href="https://www.nec.edu/">New England College</a>!</li>
+          <li><strong><time datetime="2024-05-15">May 15, 2024</time></strong> &ndash; I started doing research with the <a href="https://fintech.gatech.edu">Georgia Tech Financial Services Innovation Lab</a>!</li>
+          <li><strong><time datetime="2024-04-04">April 4, 2024</time></strong> &ndash; I was one of five students from India awarded a U.S. Department of State <a href="https://globalugrad.org/">Global UGRAD scholarship</a> for a fully funded semester of undergraduate study in the United States!</li>
+          <li><strong><time datetime="2023-10-30">October 30, 2023</time></strong> &ndash; I was elected Secretary of Student Academics in Sai University’s undergraduate student government!</li>
+          <li><strong><time datetime="2023-09-13">September 13, 2023</time></strong> &ndash; <a href="https://sites.google.com/saiuniversity.edu.in/turingites/events?authuser=0#h.4xrf4s2qivss">Turingites, Sai University’s Computer Science Society</a>, was inaugurated, and I was appointed President!</li>
+          <li><strong><time datetime="2023-08-12">August 12, 2023</time></strong> &ndash; I was selected as an <a href="https://www.millenniumfellows.org/fellow/2023/saiuniversity/vidhyakshaya-kannan">Emerging Technologist Millennium Fellow</a> for the class of 2023!</li>
+          <li><strong><time datetime="2023-03-03">March 3, 2023</time></strong> &ndash; I was one of three students appointed to the Sai University Anti-Ragging Committee!</li>
+          <li><strong><time datetime="2023-01-11">January 11, 2023</time></strong> &ndash; I was a student panelist for <em>Computing and Data Science: Startups, Society and the Future</em> at Sai University, alongside <a href="https://theory.stanford.edu/people/jcm/">Dr. John C. Mitchell</a> of Stanford University.</li>
+          <li><strong><time datetime="2022-09-11">September 11, 2022</time></strong> &ndash; I was accepted to Sai University’s School of Computing and Data Science with a 75% scholarship!</li>
+          </ul>
+        </div>
+        <p class="date-note">Conference acceptance entries use each track’s official notification date.</p>
+      </section>
+      <section class="content-section" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <dl class="education-list">
+          <div><dt>Stanford University</dt><dd>M.S., Symbolic Systems · Autumn 2026–expected June 2028</dd></div>
+          <div><dt>Sai University</dt><dd>B.Tech., Computing and Data Science; minor in English Literature · September 2022–May 2026<br>CGPA: 9.58/10 · Department rank: 1</dd></div>
+          <div><dt>New England College</dt><dd>Global UGRAD exchange, Computer Information Systems · August–December 2024<br>GPA: 4.0/4.0</dd></div>
+        </dl>
+      </section>
+      <section class="content-section" aria-labelledby="selected-heading">
+        <h2 id="selected-heading">Selected Publications</h2>
+      <article class="publication">
+        <div class="publication-visual"><div class="publication-badge" aria-label="KDD 2026">KDD<br>2026</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1145/3770855.3817580">IPO-Mine: A Toolkit and Dataset for Section-Structured Analysis of Long, Multimodal IPO Documents</a></h3>
+          <p>Michael Galarnyk*, Siddharth Lohani*, <strong>Vidhyakshaya Kannan</strong>, Sagnik Nandi, Aman Patel, Liqin Ye, Arnav Hiray, Rutwik Routu, Prasun Banerjee, Siddhartha Somani, Sudheer Chava</p>
+          <p class="venue">KDD 2026 · Datasets and Benchmarks Track · pp. 8882–8893</p>
+          <p class="paper-links"><a href="https://arxiv.org/pdf/2605.28714">paper</a> / <a href="https://doi.org/10.1145/3770855.3817580">ACM</a> / <a href="https://arxiv.org/abs/2605.28714">arXiv</a></p>
 
-    <title>Vidhyakshaya Kannan</title>
+        </div>
+      </article>
+      <article class="publication">
+        <div class="publication-visual"><img src="images/kgqagen_thumbnail.png" alt="kg-mulqa research overview" loading="lazy"></div>
+        <div>
+          <h3><a href="https://aclanthology.org/2026.acl-long.151/">KG-MuLQA: A Framework for KG-based Multi-Level QA Extraction and Long-Context LLM Evaluation</a></h3>
+          <p>Nikita Tatarinov, <strong>Vidhyakshaya Kannan*</strong>, Haricharana Srinivasa*, Arnav Raj, Harpreet Singh Anand, Varun Singh, Aditya Luthra, Ravij Lade, Agam Shah, Sudheer Chava</p>
+          <p class="venue">ACL 2026 · Main Conference · Oral · pp. 3323–3359</p>
+          <p class="paper-links"><a href="https://aclanthology.org/2026.acl-long.151.pdf">paper</a> / <a href="https://aclanthology.org/2026.acl-long.151/">ACL Anthology</a> / <a href="https://github.com/gtfintechlab/KG-MuLQA">code</a></p>
 
-    <meta name="author" content="Vidhyakshaya Kannan">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-    <script>
-      function switchTab(event, tabName) {
-        event.preventDefault();
-        
-        // Hide all tab contents
-        const tabContents = document.querySelectorAll('.tab-content');
-        tabContents.forEach(tab => {
-          tab.classList.remove('active');
-        });
-        
-        // Remove active class from all nav links
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-        });
-        
-        // Show the selected tab
-        const selectedTab = document.getElementById(tabName);
-        if (selectedTab) {
-          selectedTab.classList.add('active');
-        }
-        
-        // Add active class to clicked link
-        event.target.classList.add('active');
-      }
-    </script>
-  </head>
-
-  <body>
-    <!-- Navigation Tabs at Top -->
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px;width:100%;vertical-align:middle">
-          <div class="nav-tabs">
-            <a href="#home" class="nav-link active" onclick="switchTab(event, 'home')">Home</a>
-            <a href="#research" class="nav-link" onclick="switchTab(event, 'research')">Research</a>
-            <a href="#teaching" class="nav-link" onclick="switchTab(event, 'teaching')">Teaching</a>
-            <a href="https://vidhyakshayakannan.blogspot.com" class="nav-link" target="_blank">Personal Blog</a>
-          </div>
-        </td>
-      </tr>
-    </tbody></table>
-
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-
-          <!-- Home Tab (News + Publications) -->
-          <div id="home" class="tab-content active">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:16px;width:65%;vertical-align:top">
-                <p class="name" style="text-align: left; margin-top: 0px; margin-bottom: 10px;">
-                  Vidhyakshaya Kannan
-                </p>
-                <p style="margin:8px 0; font-size: 14px; line-height: 1.6;">
-                  I am a Computing and Data Science senior at <a href="https://www.saiuniversity.edu.in">Sai University</a>. I am currently doing NLP research with the <a href="https://fintech.gatech.edu">Georgia Tech Financial Services Innovation Lab</a>, supervised by <a href="https://www.scheller.gatech.edu/directory/faculty/chava/index.html">Dr. Sudheer Chava</a> (Alton M. Costley Chair Professor of Finance, Georgia Tech). I am also exploring cognitive mechanisms of temporal attention with <a href="https://faculty-directory.dartmouth.edu/jamshed-j-bharucha">Dr. Jamshed Bharucha</a> (Distinguished Fellow, Dartmouth College).
-                </p>
-                <p style="margin:8px 0; font-size: 14px; line-height: 1.6;">
-                  During my undergraduate studies, I have been fortunate to be advised by <a href="https://www.saiuniversity.edu.in/saiu-faculties/ram-prasad-krishnamoorthy">Dr. Ram Prasad Krishnamoorthy</a> (former Marie Curie Fellow and Associate Dean, Sai University) and <a href="https://acr.iitm.ac.in/latestdaas/dr-krithi-ramamritham/">Dr. Krithi Ramamritham</a> (Vijay and Sita Vashee Chair Professor of Computer Science, IIT Bombay). 
-                </p>
-                <p style="margin:8px 0; font-size: 14px; line-height: 1.6;">
-                  My research in the United States was made possible in part by the <a href = "https://globalugrad.org/">Global Undergraduate Exchange Program.</a> I was one of the five students in India to be awarded a scholarship to pursue one semester of fully-funded study in Computer Science in the United States.
-                </p>
-                <p style="margin-top:12px; text-align:left; font-size: 14px;">
-                  <a href="mailto:vidhyakshaya.k-26@scds.saiuniversity.edu.in">Email</a> / 
-                  <a href="data/Vidhyakshaya_Kannan_CV__3_Page_.pdf">CV</a> / 
-                  <a href="https://scholar.google.com/citations?user=mqSXTOUAAAAJ&hl=en&oi=ao">Google Scholar</a> / 
-                  <a href="https://github.com/vidhyakshayakannan">GitHub</a>
-                </p>
-              </td>
-              <td style="padding:40px;width:35%;max-width:35%;vertical-align:text-center">
-                <a href="images/VidhyakshayaKannan.png"><img style="width:100%;aspect-ratio:1;object-fit:cover;object-position:center 35%;border-radius:0px;" alt="profile photo" src="images/VidhyakshayaKannan.png" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px 16px 10px 16px;width:100%;vertical-align:middle">
-                <h2 style="margin-bottom: 12px;">News</h2>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:0px 16px 16px 16px;width:100%;vertical-align:middle">
-                <div class="news-section">
-                  <ul style="list-style: none; padding: 0; margin: 0;">
-                    <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">September 25, 2025</strong> &ndash; Our paper <a href="https://aclanthology.org/2025.emnlp-industry.168/"><em>T-VEC: A Telecom-Specific Vectorization Model with Enhanced Semantic Understanding via Deep Triplet Loss Fine-Tuning</em></a> was accepted to EMNLP 2025 (Industry Track)!</a>
-                    <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">September 25, 2025</strong> &ndash; Our paper <a href="https://aclanthology.org/2025.emnlp-demos.49/"><em>ConfReady: A RAG based Assistant and Dataset for Conference Checklist Responses</em></a> was accepted to EMNLP 2025 (System Demonstrations Track)!</a>
-                    <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">May 18, 2025</strong> &ndash; My first preprint, <a href="https://arxiv.org/abs/2505.12495"><em> KG-QAGen: A Knowledge-Graph-Based Framework for Systematic Question Generation and Long-Context LLM Evaluation</em></a> is now available!</a>
-                    <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">August 23, 2024</strong> &ndash; I started my exchange semester as a Global UGRAD Scholar at <a href="https://www.nec.edu/">New England College!</a>
-                    <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">May 15, 2024</strong> &ndash; I started doing research with the <a href="https://fintech.gatech.edu">Georgia Tech Financial Services Innovation Lab!</a>
-                    <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">April 4, 2024</strong> &ndash; I was one of the five students from India to receive funding from the U.S. Department of State, through the <a href = "https://globalugrad.org/"> Global UGRAD scholarship</a>, to pursue one semester of fully funded undergraduate study in Computer Science in the United States!
-                      <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">October 30, 2023</strong> &ndash; I was elected to the undergraduate student government, where I serve as the Secretary of Student Academics!
-                     <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">September 13, 2023</strong> &ndash; <a href="https://sites.google.com/saiuniversity.edu.in/turingites/events?authuser=0#h.4xrf4s2qivss">Turingites, Sai University's Computer Science Society</a>, was inaugurated and I was appointed President!
-                      <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">August 12, 2023</strong> &ndash; I was selected as an <a href = "https://www.millenniumfellows.org/fellow/2023/saiuniversity/vidhyakshaya-kannan"> Emerging Technologist Millennium Fellow </a> for the class of 2023!
-                      <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">March 3, 2023</strong> &ndash; I was one of the three students to be appointed to the Sai University Anti-Ragging Committee! 
-                      <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">January 11, 2023</strong> &ndash; I was one of the three student panelists taking part in the discussion <em>Computing and Data Science: Startups, Society and the Future</em>, held at Sai University alongside <a href = "https://theory.stanford.edu/people/jcm/"> Dr. John C. Mitchell (Mary and Gordon Crary Family Professor, Stanford University)</a>.
-                     <li style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e8e8e8;">
-                      <strong style="color: #555;">Sep 11, 2022</strong> &ndash; I was accepted to Sai University's <a href="https://www.saiuniversity.edu.in/schools/school-of-computing-and-data-science">School of Computing and Data Science</a> with a 75% scholarship!
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Selected Publications</h2>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:top">
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom:20px;">
-                  <tbody>
-                    <tr>
-                      <td align="center" style="padding:16px;width:25%;vertical-align:top">
-                        <img src="images/confready-thumbnail.png" alt="ConfReady" style="width:100%;max-width:150px;border-radius:4px;">
-                      </td>
-                      <td style="padding:0px 16px;width:75%;vertical-align:top">
-                        <a href="https://aclanthology.org/2025.emnlp-demos.49/" style="text-decoration: none;"><h3 style="margin:0 0 8px 0;color:#007acc;">ConfReady: A RAG based Assistant and Dataset for Conference Checklist Responses</h3></a>
-                        <p style="margin:8px 0;font-size:14px;"><strong>Michael Galarnyk, Rutwik Routu, Vidhyakshaya Kannan, Kosha Bheda, Prasun Banerjee, Agam Shah, Sudheer Chava</strong></p>
-                        <p style="margin:8px 0;font-size:13px;font-style:italic;">EMNLP 2025 System Demonstrations</p>
-                        <p style="margin:8px 0;font-size:13px;"><a href="https://aclanthology.org/2025.emnlp-demos.49.pdf">paper</a> / <a href="https://aclanthology.org/2025.emnlp-demos.49/">ACL Anthology</a></p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                  <tbody>
-                    <tr>
-                      <td align="center" style="padding:16px;width:25%;vertical-align:top">
-                        <img src="images/tvec-thumbnail.png" alt="T-VEC" style="width:100%;max-width:150px;border-radius:4px;">
-                      </td>
-                      <td style="padding:0px 16px;width:75%;vertical-align:top">
-                        <a href="https://aclanthology.org/2025.emnlp-industry.168/" style="text-decoration: none;"><h3 style="margin:0 0 8px 0;color:#007acc;">T-VEC: A Telecom-Specific Vectorization Model with Enhanced Semantic Understanding via Deep Triplet Loss Fine-Tuning</h3></a>
-                        <p style="margin:8px 0;font-size:14px;"><strong>Vignesh Ethiraj, Ashwath D, Sidhanth Menon, Divya Vijay, Vidhyakshaya Kannan</strong></p>
-                        <p style="margin:8px 0;font-size:13px;font-style:italic;">EMNLP 2025 Industry Track</p>
-                        <p style="margin:8px 0;font-size:13px;"><a href="https://aclanthology.org/2025.emnlp-industry.168.pdf">paper</a> / <a href="https://aclanthology.org/2025.emnlp-industry.168/">ACL Anthology</a></p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:0px 16px 16px 16px;width:100%;vertical-align:middle">
-                <p style="font-size: 14px; color: #666;">
-                  See my <a href="#research" onclick="switchTab(event, 'research')">Research</a> page for the complete list of publications.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
-            <tr>
-              <td>
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #c6b89e;">
-								 <h2>Academic Service</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://eacl.org/">Reviewer, EACL 2026 (System Demonstrations)</a>
-                <br>
-
-              </td>
-            </tr>
-          </tbody></table>
-          </div>
-
-          <!-- Research Tab -->
-          <div id="research" class="tab-content">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Research</h2>
-                    <p>
-                      My work involves benchmarking long-context LLMs using knowledge-graph frameworks, developing RAG-based evaluation tools, and exploring cognitive mechanisms of temporal attention.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:20px;">
-              <tbody>
-                <tr>
-                  <td align="center" style="padding:16px;width:25%;vertical-align:top">
-                    <img src="images/confready-thumbnail.png" alt="ConfReady" style="width:100%;max-width:150px;border-radius:4px;">
-                  </td>
-                  <td style="padding:0px 16px;width:75%;vertical-align:top">
-                    <h3 style="margin-top:0;color:#007acc;"><a href="https://aclanthology.org/2025.emnlp-demos.49/" style="text-decoration: none; color: #007acc;">ConfReady: A RAG based Assistant and Dataset for Conference Checklist Responses</a></h3>
-                    <p style="margin:8px 0;"><strong>Michael Galarnyk*,</strong> <strong>Rutwik Routu*,</strong> <strong>Vidhyakshaya Kannan*,</strong> Kosha Bheda, Prasun Banerjee, Agam Shah, Sudheer Chava</p>
-                    <p style="margin:8px 0;font-style:italic;">Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: System Demonstrations (EMNLP 2025)</p>
-                    <p style="margin:8px 0;"><a href="https://aclanthology.org/2025.emnlp-demos.49.pdf">paper</a> / <a href="https://aclanthology.org/2025.emnlp-demos.49/">ACL Anthology</a></p>
-                    <p style="margin:8px 0;">A retrieval-augmented generation (RAG) application to empower authors to reflect on their work and assist with conference checklists, with a curated dataset of 1,975 ACL checklist responses.</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:20px;">
-              <tbody>
-                <tr>
-                  <td align="center" style="padding:16px;width:25%;vertical-align:top">
-                    <img src="images/tvec-thumbnail.png" alt="T-VEC" style="width:100%;max-width:150px;border-radius:4px;">
-                  </td>
-                  <td style="padding:0px 16px;width:75%;vertical-align:top">
-                    <h3 style="margin-top:0;color:#007acc;"><a href="https://aclanthology.org/2025.emnlp-industry.168/" style="text-decoration: none; color: #007acc;">T-VEC: A Telecom-Specific Vectorization Model with Enhanced Semantic Understanding via Deep Triplet Loss Fine-Tuning</a></h3>
-                    <p style="margin:8px 0;">Vignesh Ethiraj*, Ashwath D*, Sidhanth Menon*, Divya Vijay*, <strong>Vidhyakshaya Kannan*</strong></p>
-                    <p style="margin:8px 0;font-style:italic;">Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track (EMNLP 2025)</p>
-                    <p style="margin:8px 0;"><a href="https://aclanthology.org/2025.emnlp-industry.168.pdf">paper</a> / <a href="https://aclanthology.org/2025.emnlp-industry.168/">ACL Anthology</a></p>
-                    <p style="margin:8px 0;">A domain-adapted embedding model fine-tuned for the telecommunications industry, surpassing generic models on telecom-specific retrieval tasks with superior semantic precision.</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:20px;">
-              <tbody>
-                <tr>
-                  <td align="center" style="padding:16px;width:25%;vertical-align:top">
-                    <img src="images/kgqagen_thumbnail.png" alt="KG-QAGen" style="width:100%;max-width:150px;border-radius:4px;">
-                  </td>
-                  <td style="padding:0px 16px;width:75%;vertical-align:top">
-                    <h3 style="margin-top:0;color:#007acc;"><a href="https://arxiv.org/abs/2505.12495" style="text-decoration: none; color: #007acc;">KG-QAGen: A Knowledge-Graph-Based Framework for Systematic Question Generation and Long-Context LLM Evaluation</a></h3>
-                    <p style="margin:8px 0;">Nikita Tatarinov, <strong>Vidhyakshaya Kannan*,</strong> Haricharana Srinivasa*, Arnav Raj, Harpreet Singh Anand, Varun Singh, Aditya Luthra, Ravij Lade, Agam Shah, Sudheer Chava</p>
-                    <p style="margin:8px 0;font-style:italic;">arXiv:2505.12495 [cs.CL] (2025)</p>
-                    <p style="margin:8px 0;"><a href="https://arxiv.org/abs/2505.12495">arxiv</a> / <a href="https://arxiv.org/pdf/2505.12495">pdf</a></p>
-                    <p style="margin:8px 0;">A framework that systematically varies question complexity across multiple dimensions (multi-hop retrieval, set operations, answer plurality) to enable fine-grained assessment of LLM performance on long-context understanding tasks, with 20,139 QA pairs from financial agreements.</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Teaching Tab -->
-          <div id="teaching" class="tab-content">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #edd892;">
-								 <h2>Teaching</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                Peer Tutor, Introduction to Embedded Systems and Robotics (Sai University, Spring 2024)
-                <br>
-                Peer Tutor, Introduction to Programming (Sai University, Fall 2023; Fall 2025)
-                <br>
-                Peer Tutor, Data Structures and Algorithms (Sai University, Spring 2024)
-              </td>
-            </tr>
-            
-          </tbody></table>
-          </div>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of <a href="https://jonbarron.info">Jon Barron's website</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+        </div>
+      </article>
+        <p>See <a href="#research">Research</a> for all publications. <span class="muted">* Equal contribution.</span></p>
+      </section>
+      <section class="content-section" aria-labelledby="service-heading">
+        <h2 id="service-heading">Academic Service</h2>
+        <p><a href="https://eacl.org/">Reviewer, EACL 2026 (System Demonstrations)</a></p>
+      </section>
+    </section>
+    <section id="research" class="tab-content" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research</h2>
+      <p>My work spans long-context language model evaluation, knowledge graphs, retrieval-augmented generation, and multimodal financial documents. I am also interested in cognitive mechanisms of temporal attention.</p>
+      <p class="muted">* Equal contribution.</p>
+      <article class="publication">
+        <div class="publication-visual"><div class="publication-badge" aria-label="KDD 2026">KDD<br>2026</div></div>
+        <div>
+          <h3><a href="https://doi.org/10.1145/3770855.3817580">IPO-Mine: A Toolkit and Dataset for Section-Structured Analysis of Long, Multimodal IPO Documents</a></h3>
+          <p>Michael Galarnyk*, Siddharth Lohani*, <strong>Vidhyakshaya Kannan</strong>, Sagnik Nandi, Aman Patel, Liqin Ye, Arnav Hiray, Rutwik Routu, Prasun Banerjee, Siddhartha Somani, Sudheer Chava</p>
+          <p class="venue">KDD 2026 · Datasets and Benchmarks Track · pp. 8882–8893</p>
+          <p class="paper-links"><a href="https://arxiv.org/pdf/2605.28714">paper</a> / <a href="https://doi.org/10.1145/3770855.3817580">ACM</a> / <a href="https://arxiv.org/abs/2605.28714">arXiv</a></p>
+          <p>A toolkit and dataset for parsing long IPO filings into standardized sections and analyzing their text, tables, and images.</p>
+        </div>
+      </article>
+      <article class="publication">
+        <div class="publication-visual"><img src="images/kgqagen_thumbnail.png" alt="kg-mulqa research overview" loading="lazy"></div>
+        <div>
+          <h3><a href="https://aclanthology.org/2026.acl-long.151/">KG-MuLQA: A Framework for KG-based Multi-Level QA Extraction and Long-Context LLM Evaluation</a></h3>
+          <p>Nikita Tatarinov, <strong>Vidhyakshaya Kannan*</strong>, Haricharana Srinivasa*, Arnav Raj, Harpreet Singh Anand, Varun Singh, Aditya Luthra, Ravij Lade, Agam Shah, Sudheer Chava</p>
+          <p class="venue">ACL 2026 · Main Conference · Oral · pp. 3323–3359</p>
+          <p class="paper-links"><a href="https://aclanthology.org/2026.acl-long.151.pdf">paper</a> / <a href="https://aclanthology.org/2026.acl-long.151/">ACL Anthology</a> / <a href="https://github.com/gtfintechlab/KG-MuLQA">code</a></p>
+          <p>A knowledge-graph framework for evaluating long-context reasoning across multi-hop retrieval, set operations, and answer plurality, using 20,139 question–answer pairs and 16 LLMs.</p>
+        </div>
+      </article>
+      <article class="publication">
+        <div class="publication-visual"><img src="images/confready-thumbnail.png" alt="confready research overview" loading="lazy"></div>
+        <div>
+          <h3><a href="https://aclanthology.org/2025.emnlp-demos.49/">ConfReady: A RAG based Assistant and Dataset for Conference Checklist Responses</a></h3>
+          <p>Michael Galarnyk*, Rutwik Routu*, <strong>Vidhyakshaya Kannan*</strong>, Kosha Bheda, Prasun Banerjee, Agam Shah, Sudheer Chava</p>
+          <p class="venue">EMNLP 2025 · System Demonstrations · pp. 667–677</p>
+          <p class="paper-links"><a href="https://aclanthology.org/2025.emnlp-demos.49.pdf">paper</a> / <a href="https://aclanthology.org/2025.emnlp-demos.49/">ACL Anthology</a></p>
+          <p>A retrieval-augmented assistant for conference checklist responses, evaluated with a curated dataset of 1,975 ACL checklist responses.</p>
+        </div>
+      </article>
+      <article class="publication">
+        <div class="publication-visual"><img src="images/tvec-thumbnail.png" alt="tvec research overview" loading="lazy"></div>
+        <div>
+          <h3><a href="https://aclanthology.org/2025.emnlp-industry.168/">T-VEC: A Telecom-Specific Vectorization Model with Enhanced Semantic Understanding via Deep Triplet Loss Fine-Tuning</a></h3>
+          <p>Vignesh Ethiraj*, Ashwath D*, Sidhanth Menon*, Divya Vijay*, <strong>Vidhyakshaya Kannan*</strong></p>
+          <p class="venue">EMNLP 2025 · Industry Track · pp. 2449–2460</p>
+          <p class="paper-links"><a href="https://aclanthology.org/2025.emnlp-industry.168.pdf">paper</a> / <a href="https://aclanthology.org/2025.emnlp-industry.168/">ACL Anthology</a></p>
+          <p>A telecom-specific embedding model adapted with triplet-loss fine-tuning for domain-specific semantic retrieval.</p>
+        </div>
+      </article>
+    </section>
+    <section id="teaching" class="tab-content" aria-labelledby="teaching-heading">
+      <h2 id="teaching-heading">Teaching</h2>
+      <article class="teaching-entry">
+        <h3><a href="https://web.stanford.edu/class/cs224v/index.html">CS224V: Agentic AI</a></h3>
+        <p><strong>Teaching Assistant · Stanford University</strong><br>Autumn 2026 · Instructor: Professor Monica Lam</p>
+        <p>Teaching assistant for Stanford’s course on building AI agents.</p>
+      </article>
+      <article class="teaching-entry">
+        <h3><a href="https://maven.com/aishwarya-srinivasan/mastering-ai-agents">Mastering Agentic AI: Certification by The Gen Academy</a></h3>
+        <p><strong>Teaching Assistant · The Gen Academy</strong><br>Instructors: Aishwarya Srinivasan and Arvind Narayanamurthy</p>
+        <ul class="cohort-dates">
+          <li>May 2026 cohort: <time datetime="2026-05-30">May 30</time>–<time datetime="2026-07-13">July 13, 2026</time></li>
+          <li>August 2026 cohort: <time datetime="2026-08-08">August 8</time>–<time datetime="2026-09-13">September 13, 2026</time></li>
+        </ul>
+        <p>Supported learners working on agentic AI projects. Cohort date ranges are from <a href="https://maven.com/aishwarya-srinivasan/mastering-ai-agents">Maven</a>.</p>
+      </article>
+      <article class="teaching-entry">
+        <h3>Peer Tutoring</h3>
+        <p><strong>Sai University</strong></p>
+        <ul>
+          <li>Introduction to Programming · Autumn 2023 and Autumn 2025</li>
+          <li>Data Structures and Algorithms · Spring 2024</li>
+          <li>Introduction to Embedded Systems and Robotics · Spring 2024</li>
+          <li>Calculus</li>
+        </ul>
+        <p>Supported more than 120 students across four semesters through peer tutoring, weekly office hours, and problem sets.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">Website adapted from <a href="https://jonbarron.info">Jon Barron</a>. See also <a href="https://leonidk.com/">Leonid Keselman</a>’s <a href="https://github.com/leonidk/new_website">Jekyll fork</a>.</footer>
+</body>
 </html>
