@@ -37,5 +37,5 @@ These cohort ranges appear only in Teaching, at the author’s request. They are
 - ConfReady: [ACL record](https://aclanthology.org/2025.emnlp-demos.49/).
 - T-VEC: [ACL record](https://aclanthology.org/2025.emnlp-industry.168/).
 - The [KG-QAGen v1 arXiv record](https://arxiv.org/abs/2505.12495v1) gives May 18, 2025 as the submission date. The original news wording is retained at the author’s request.
-- All 12 old news items from 2022–2025 and the dated Sai University teaching terms are carried forward from the existing website. They have not been independently reverified. Other education details and the tutoring description come from the CV. No exact term was supplied for calculus tutoring, so that item remains undated.
+- All 12 old news items from 2022–2025 and the dated Sai University teaching terms are carried forward from the existing website. They have not been independently reverified. Other education details and the tutoring description come from the CV. Calculus tutoring is omitted at the author’s request.
 
